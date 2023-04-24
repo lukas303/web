@@ -42,6 +42,11 @@ a{
   text-decoration: underline;
 }
 
+#statement {
+  width: 500px;
+}
+
+
 
 .button1 {
   background:none;
