@@ -13,14 +13,10 @@ body {
   font-weight: 500;
 }
 
-
 img {
-  position: absolute;
   width: 340px;
   height: 510px;
-  top: 150px;
-  right: 600px;
-
+  
 }
 
 a{
@@ -46,7 +42,12 @@ a{
   width: 500px;
 }
 
-
+#gallery {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .button1 {
   background:none;
@@ -55,11 +56,12 @@ a{
   padding:0;
   cursor: pointer;
   position: absolute;
-  top: 660px;
-  right: 615px;
   font-size: 13px;
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500; 
+  font-weight: 500;
+  top: 99%;
+  left: 93%;
+
 }
 
 .button2 {
@@ -69,14 +71,27 @@ a{
   padding:0;
   cursor: pointer;
   position: absolute;
-  top: 660px;
-  right: 600px;
   font-size: 13px;
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
+  top: 99%;
+  left: 97%;
 }
 
-
 #infobutton {
+  position: absolute;
   cursor: pointer;
+}
+
+#page-body {
+  position: relative;
+}
+
+#left-info {
+  width: 500px; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding-right: 10px; 
 }
