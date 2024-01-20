@@ -1,40 +1,57 @@
-const images = [
-  "image1.png",
-  "image4.png",
-];
+document.addEventListener("DOMContentLoaded", function () {
+  var randomImage = document.getElementById("random-image");
 
-let currentIndex = 0;
+  // Array of image URLs to be used
+  var imageUrls = [
+      "file:///Users/lukas/Documents/Github/web/images/image2.png",
+      "file:///Users/lukas/Documents/Github/web/images/image3.png",
+      "file:///Users/lukas/Documents/Github/web/images/image1.png",
+      // Add more image URLs as needed
+  ];
 
-function showImage(index) {
-  const img = document.querySelector("#image");
-  img.src = "images/" + images[index];
-  currentIndex = index;
-}
+  // Set the initial random position and show the image
+  setRandomPosition();
+  randomImage.style.display = "block";
 
-function updateButtons() {
-  const previousButton = document.querySelector("#previous");
-  const nextButton = document.querySelector("#next");
-  previousButton.disabled = currentIndex === 0;
-  nextButton.disabled = currentIndex === images.length - 1;
-  previousButton.style.display = previousButton.disabled ? "none" : "inline-block";
-  nextButton.style.display = nextButton.disabled ? "none" : "inline-block";
-}
+  // Initialize the index to 0
+  var currentIndex = 0;
 
-function nextImage() {
-if (currentIndex < images.length - 1) {
-  currentIndex++;
-  showImage(currentIndex);
-  updateButtons();
-}
-}
+  randomImage.addEventListener("click", function () {
+      // Generate random positions and set the next image
+      setRandomPosition();
+      setNextImage();
+  });
 
-function previousImage() {
-if (currentIndex > 0) {
-  currentIndex--;
-  showImage(currentIndex);
-  updateButtons();
-}
-}
+  function setRandomPosition() {
+      // Get the dimensions of the visible portion of the website
+      var visibleWidth = window.innerWidth;
+      var visibleHeight = window.innerHeight;
+
+      // Set a buffer around the visible width and height
+      var bufferX = 120; // Adjust as needed
+      var bufferY = 100; // Adjust as needed
+
+      // Calculate the maximum random positions considering the buffer
+      var maxX = visibleWidth - randomImage.width - bufferX;
+      var maxY = visibleHeight - randomImage.height - bufferY;
+
+      // Generate random positions
+      var randomX = Math.floor(Math.random() * maxX);
+      var randomY = Math.floor(Math.random() * maxY);
+
+      // Set the position
+      randomImage.style.left = randomX + "px";
+      randomImage.style.top = randomY + "px";
+  }
+
+  function setNextImage() {
+      // Set the next image URL from the array
+      randomImage.src = imageUrls[currentIndex];
+
+      // Increment the index or reset to 0 if it reaches the end
+      currentIndex = (currentIndex + 1) % imageUrls.length;
+  }
+});
 
 function toggleInfo() {
   var x = document.getElementById("info");
@@ -44,9 +61,3 @@ function toggleInfo() {
     x.style.display = "none";
   }
 }
-
-showImage(currentIndex);
-updateButtons();
-
-document.querySelector("#previous").addEventListener("click", previousImage);
-document.querySelector("#next").addEventListener("click", nextImage);
