@@ -2,6 +2,8 @@ header {
   margin: 50px;
   text-align: left;
   font-size: 13px; 
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 
 
@@ -19,7 +21,7 @@ img {
   
 }
 
-a{
+a {
   color: black;
 }
 
@@ -40,42 +42,6 @@ a{
 
 #statement {
   width: 500px;
-}
-
-#gallery {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.button1 {
-  background:none;
-  border:none;
-  margin:0;
-  padding:0;
-  cursor: pointer;
-  position: absolute;
-  font-size: 13px;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  top: 99%;
-  left: 93%;
-
-}
-
-.button2 {
-  background:none;
-  border:none;
-  margin:0;
-  padding:0;
-  cursor: pointer;
-  position: absolute;
-  font-size: 13px;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  top: 99%;
-  left: 97%;
 }
 
 #infobutton {
