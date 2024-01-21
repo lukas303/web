@@ -1,24 +1,17 @@
 header {
-  margin: 50px;
+  margin: 40px;
   text-align: left;
   font-size: 13px; 
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
 
-
 body {
-  margin: 50px;
+  margin: 40px;
   text-align: left;
   font-size: 13px;
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
-}
-
-img {
-  width: 340px;
-  height: 510px;
-  
 }
 
 a {
@@ -40,13 +33,10 @@ a {
   text-decoration: underline;
 }
 
-#statement {
-  width: 500px;
-}
-
 #infobutton {
   position: absolute;
   cursor: pointer;
+  font-size: 13px;
 }
 
 #page-body {
