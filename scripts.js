@@ -61,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       var bufferLeft = 5;
       var bufferBottom = 50;
-      var bufferRight = 40;
-      var bufferTop = 10;
+      var bufferRight = 30;
+      var bufferTop = 5;
 
       var excludeAreaWidth = 200;
       var excludeAreaHeight = 200;
