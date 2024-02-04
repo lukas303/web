@@ -47,11 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       var imageWidth, imageHeight;
 
-      if (visibleWidth < 380) {
+      if (visibleWidth < 400) {
           randomImage.style.width = "260px";
           randomImage.style.height = "390px";
-          imageWidth = 260;
-          imageHeight = 390;
+          imageWidth = 260*0.5;
+          imageHeight = 390*0.5;
       } else {
           randomImage.style.width = "";
           randomImage.style.height = "";
