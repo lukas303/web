@@ -48,10 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
       var imageWidth, imageHeight;
 
       if (visibleWidth < 400) {
-          randomImage.style.width = "272px";
-          randomImage.style.height = "408px";
-          imageWidth = 272;
-          imageHeight = 408;
+          randomImage.style.width = "238px";
+          randomImage.style.height = "357px";
+          imageWidth = 238;
+          imageHeight = 357;
       } else {
           randomImage.style.width = "";
           randomImage.style.height = "";
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       var bufferLeft = 5;
-      var bufferBottom = 50;
+      var bufferBottom = 100;
       var bufferRight = 20;
       var bufferTop = 5;
 
