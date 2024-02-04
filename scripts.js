@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
       var imageWidth, imageHeight;
 
       if (visibleWidth < 400) {
-          randomImage.style.width = "402px";
-          randomImage.style.height = "708px";
+          randomImage.style.width = "272px";
+          randomImage.style.height = "408px";
           imageWidth = 272;
           imageHeight = 408;
       } else {
