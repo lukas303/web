@@ -59,9 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
           imageHeight = 510;
       }
 
-      var bufferLeft = 10;
+      var bufferLeft = 5;
       var bufferBottom = 50;
-      var bufferRight = 10;
+      var bufferRight = 40;
       var bufferTop = 10;
 
       var excludeAreaWidth = 200;
