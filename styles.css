@@ -1,45 +1,54 @@
 body {
-  margin: 40px;
   text-align: left;
   font-size: 14px;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
-
-a {
-  color: black;
-}
-
-#link a{
-  text-decoration: none;
-}
-
-#link a:hover{
-  text-decoration: none;
-}
-
-#ulink a{
-  text-decoration: underline;
-}
-
-
-#ulink a:hover{
-  text-decoration: none;
-}
-
-#infobutton {
-  cursor: pointer;
-}
-
 
 #game-container {
   position: absolute;
 }
 
 #random-image {
-  position: absolute;
+  position: absolute; /* Ensure the image is behind the text */
   cursor: pointer;
   display: none; /* Initially hide the image */
-  /* #width: 150px; *//* Adjust the width as needed */
-  /* #height: 150px; *//* Adjust the height as needed */
+  z-index: 1; /* Ensure the image is behind the text */
+  width: 340px; /* 340 x 510 */
+  height: 510px;
+}
+
+#text {
+  margin: 40px;
+}
+
+a,
+.link a,
+.ulink a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  z-index: 2; /* Ensure the text is on top of the image */
+}
+
+.ulink a {  text-decoration: underline;
+}
+
+.ulink a:hover {text-decoration: none;
+}
+
+#infobutton {
+  cursor: pointer;
+  position: relative; /* Set position to allow z-index */
+  z-index: 2; /* Ensure the text is on top of the image */
+}
+
+#info {
+  display: none;
+  position: relative; /* Set position to allow z-index */
+  z-index: 2; /* Ensure the text is on top of the image */
+}
+
+#statement {
+  margin: 40px;
 }
