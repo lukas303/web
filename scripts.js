@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var bufferTop = 5;
 
       var excludeAreaWidth = 300;
-      var excludeAreaHeight = 200;
+      var excludeAreaHeight = 250;
 
       var maxX = visibleWidth - imageWidth - bufferRight;
       var maxY = visibleHeight - imageHeight - bufferBottom;

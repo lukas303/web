@@ -1,17 +1,19 @@
-body {
-  text-align: left;
-  font-size: 11.5px;
-  font-family: "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: 510;
+@font-face {
+  font-family: 'baptiste-regular'; /* Define a name for your custom font */
+  src: url('fonts/Baptiste-Regular.otf') format('opentype'), 
+  /* can add additional fallback font formats here if needed */
 }
 
-#game-container {
-  position: absolute;
+body {
+  text-align: left;
+  font-size: 11px;
+  font-family: "baptiste-regular", Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 
 #random-image {
   position: absolute; /* Ensure the image is behind the text */
-  cursor: pointer;
+  cursor: url('favicon/favicon.png'), auto;
   display: none; /* Initially hide the image */
   z-index: 1; /* Ensure the image is behind the text */
   width: 340px; /* 340 x 510 */
@@ -22,29 +24,28 @@ body {
   margin: 40px;
 }
 
-a,
-.link a,
-.ulink a {
-  color: black;
-  text-decoration: none;
-  position: relative;
-  z-index: 2; /* Ensure the text is on top of the image */
-}
-
-.ulink a {  text-decoration: underline;
-}
-
-.ulink a:hover {text-decoration: none;
-}
-
 #infobutton {
   cursor: pointer;
   position: relative; /* Set position to allow z-index */
   z-index: 2; /* Ensure the text is on top of the image */
 }
 
+#infobutton:hover {
+  color: rgb(95, 203, 115); /* Text color on hover */
+}
+
+a, .link a{
+  color: black;
+  text-decoration: none;
+  position: relative;
+  z-index: 2; /* Ensure the text is on top of the image */
+}
+
+.link a:hover {text-decoration: none;
+  text-decoration: underline;
+}
+
 #info {
-  display: none;
   position: relative; /* Set position to allow z-index */
   z-index: 2; /* Ensure the text is on top of the image */
 }
@@ -52,3 +53,4 @@ a,
 #statement {
   margin: 40px;
 }
+
