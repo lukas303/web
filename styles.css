@@ -58,6 +58,7 @@ a, .link {
 
 #info {
   padding: 40px 20px;
+
 }
 
 .flex-container {
@@ -70,6 +71,7 @@ a, .link {
 .flex-info {
   margin-right: auto;
   padding-left: 20px;
+  padding-bottom: 40px;
 }
 
 .flex-gallery {
