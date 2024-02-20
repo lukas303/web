@@ -3,36 +3,46 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-    <title>lukas hartmann</title>
+    <title>Lukas Hartmann</title>
     <link rel="shortcut icon" type="image/png" href="favicon/favicon.png"/>
-    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <div id="game-container">
-        <img id="random-image" src="images/image3.png" class="custom-cursor" alt="Random Image">
+    <div class="header">
+        <div class="header1">
+            LUKAS HARTMANN
+        </div> 
+        <div class="header2">
+            <a href="mailto:hello@lukashartmann.com" class="text">hello@lukashartmann.com</a>
+        </div>
+        <div class="header3">
+            <a href="https://www.instagram.com/fio__nn/">@fio__nn</a>
+        </div>
     </div>
-    <div id="text">
-        <a id="infobutton" onclick="toggleInfo()">Lukas Hartmann</a>
-        <br><br>     
-        <div id="info" style="display:none">
-            Hardware design <br>
-            Based in Berlin
+
+    <div class="flex-container">
+
+        <div class="flex-info">
+            Hardware research, engineering<br> and design. Based in Berlin.    
             <br><br>
             KORG Germany GmbH | Hardware Developer <br>
             Technische Universität Berlin | MSc Audiocommunication <br>
             Trinity College Dublin | BSc Physics
             <br><br>
-                <div class="link">
-                <a href="mailto:hello@lukashartmann.com" class="text">Contact</a> <br> 
-                <a href="https://www.instagram.com/fio__nn/">Instagram</a>
-                <br><br>    
-                <a href="imprint.html">Imprint</a>
+            <a href="imprint.html">Imprint</a>
+        </div>
+
+        <div class="flex-gallery">
+            <img id="image" src="images/image1.png" alt="Your Image" onclick="changeImage() ">
+            <div id="label">
+                Bookself Speaker, Berlin 2023
             </div>
-	    </div>
-</div>
+        </div> 
+    </div>
+    
     <script src="scripts.js"></script>
+
 </body>
 
 </html>

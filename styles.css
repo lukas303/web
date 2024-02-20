@@ -6,51 +6,98 @@
 
 body {
   text-align: left;
-  font-size: 11px;
-  font-family: "baptiste-regular", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 400;
+  margin: 5px 0px 0px 0px;
+  padding: 0;  
 }
 
-#random-image {
-  position: absolute; /* Ensure the image is behind the text */
-  cursor: url('favicon/favicon.png'), auto;
-  display: none; /* Initially hide the image */
-  z-index: 1; /* Ensure the image is behind the text */
-  width: 340px; /* 340 x 510 */
-  height: 510px;
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-#text {
-  margin: 40px;
+.header1 {
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 35px;
+
 }
 
-#infobutton {
-  cursor: pointer;
-  position: relative; /* Set position to allow z-index */
-  z-index: 2; /* Ensure the text is on top of the image */
+.header1i {
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 35px;
+
 }
 
-#infobutton:hover {
-  color: rgb(95, 203, 115); /* Text color on hover */
+.header2 {
+  padding-top: 5px;
+  padding-left: 35px;
+  padding-right: 20px;
 }
 
-a, .link a{
+.header3 {
+  padding-top: 5px;
+  padding-left: 35px;
+  padding-right: 20px;
+}
+
+a, .link {
   color: black;
   text-decoration: none;
   position: relative;
   z-index: 2; /* Ensure the text is on top of the image */
 }
 
-.link a:hover {text-decoration: none;
-  text-decoration: underline;
+.link a:hover {
+  text-decoration: none;
 }
 
 #info {
-  position: relative; /* Set position to allow z-index */
-  z-index: 2; /* Ensure the text is on top of the image */
+  padding: 40px 20px;
 }
 
-#statement {
-  margin: 40px;
+.flex-container {
+  display: flex;
+  padding-top: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
 }
+
+.flex-info {
+  margin-right: auto;
+  padding-left: 20px;
+}
+
+.flex-gallery {
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px;
+  flex-shrink: 1;
+}
+
+#image {
+  width: 100%;
+  height: auto;
+}
+
+#image:hover {
+  cursor:pointer;
+}
+
+#label {
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+#imprint {
+  margin: 20px;
+}
+
+
 
