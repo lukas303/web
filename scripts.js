@@ -1,6 +1,6 @@
 var currentImageIndex = 0;
 var images = ["images/image2.jpg", "images/image3.jpg"]; // Array of image paths
-var labels = ["Bookshelf Speakers, 2022", "Acoustic Sythesis_phase 5, 2023"]; // Array of corresponding texts
+var labels = ["Bookshelf Speakers, 2022", "Acoustic Synthesis_phase 5, 2023"]; // Array of corresponding texts
 
 function changeImage() {
     var image = document.getElementById('image');
