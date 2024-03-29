@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'baptiste-regular'; /* Define a name for your custom font */
-  src: url('fonts/Baptiste-Regular.otf') format('opentype'), 
+  font-family: 'NewEdge666'; /* Define a name for your custom font */
+  src: url('fonts/NewEdge666-Regular.woff2') format('opentype'), 
   /* can add additional fallback font formats here if needed */
 }
 
 body {
   text-align: left;
-  font-size: 12.5px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-family: NewEdge666, Helvetica, Arial, sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;  
